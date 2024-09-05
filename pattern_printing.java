@@ -20,6 +20,7 @@ public class pattern_printing{
         //    System.out.print("*");
         //    }
         //    System.out.println();
+        
         // Inverted Right Facing
         // for(int i=n;i>=1;i--){
         //     for(int j=1;j<=i;j++){
