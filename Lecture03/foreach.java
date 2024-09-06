@@ -8,6 +8,5 @@ public class foreach {
     public static void main(String[] args) {
         int[]arr={2,4,3,9,5};
         display(arr);
-    
-}
+    }
 }
