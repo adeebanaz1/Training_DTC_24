@@ -12,8 +12,6 @@ public class Q10 {
             }
         
         System.out.println();
-
+        }
     }
-    
-}
 }
