@@ -8,7 +8,7 @@ public class reverseArray {
         System.out.println();
     }
     public static void main(String[] args) {
-        int[]arr={2,4,3,9,5};
+        int[]arr={2,4,3,8,5};
         printRev(arr);
     
 }
