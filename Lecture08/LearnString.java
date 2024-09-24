@@ -49,7 +49,6 @@ public class LearnString {
     //System.out.println(s1.equals(s2));
     //System.out.println(s1.equalsIgnoreCase(s2));
     //System.out.println(s1.toCharArray());
-    System.out.println(s2.trim());
-    
+    System.out.println(s2.trim());   
     }
 }    
