@@ -43,13 +43,13 @@ public class LearnString {
     //Part 6
 
     String s1 = "Laptop";
-    String s2 = "Phone";
+    String s2 = "                     Phone                       ";
     String s3 = s1+s2;
     //String s3 = s1.concat(s2);
     //System.out.println(s1.equals(s2));
     //System.out.println(s1.equalsIgnoreCase(s2));
     //System.out.println(s1.toCharArray());
-    System.out.println(10+20+30+40+s3+10+20);
+    System.out.println(s2.trim());
     
     }
 }    
