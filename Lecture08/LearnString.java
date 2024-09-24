@@ -31,10 +31,14 @@ public class LearnString {
     String s0 = "Phone";
     int[] i0 = {65,66,67};
     char[] c0 = {'a','b','c'};
-    byte[] b0 = {65,70,71,72};
+    byte[] b0 = new byte[127];
 
-    String s1 = new String(b0,1,2);
-    System.out.println(s1);
+    for(byte i=0; i<b0.length;i++)
+        b0[i]=i;
+
+    String s1 = new String(b0);
+    for(int i=0; i<s1.length();i++)
+    System.out.println(s1.charAt(i));
     
     }
 }    
