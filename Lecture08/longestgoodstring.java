@@ -1,49 +1,26 @@
 package Lecture08;
 
 public class longestgoodstring {
-    //public static void main(String[] args) {
-        String s = "aannbhdvtfeeeeeee";
-    static char findMaxOcc1(String s){
-        int countMaxElement=0;
-        char maxElement= '*';
-        int countCurrElement=0;
-        char currElement= '*';
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)!=currElement){
-                if(countCurrElement>countMaxElement){
-                    countMaxElement= countCurrElement;
-                    maxElement= currElement;
-                }
-                currElement= s.charAt(i);
-                countCurrElement=1;
+    static int maxlenLongestGoodString(String s1){
+        int count=0, ans=0;
+        for(int i =0;i<s1.length()-1;i++){
+            if(s1.charAt(i) == 'a' || s1.charAt(i) == 'e' || s1.charAt(i) == 'i' || s1.charAt(i) == 'o' || s1.charAt(i) == 'u' || s1.charAt(i) == 'A'
+            || s1.charAt(i) == 'E'|| s1.charAt(i) == 'I' || s1.charAt(i) == 'O' || s1.charAt(i) == 'U'){
+                count +=1;
             }else{
-                countCurrElement++;
+                if(count>ans){
+                    ans = count;
+                }
+                count = 0;
             }
         }
-        if(countCurrElement>countMaxElement){
-            countMaxElement= countCurrElement;
-            maxElement= currElement;
-        }
-        return maxElement;
+        return ans;
     }
 
-    static char findMaxOcc2(String s){
-        int[] arr= new int[26];
-        for(int i=0;i<s.length();i++){
-            arr[s.charAt(i)-'a']++;
-        }
-        int index=0;
-        for(int i=1;i<arr.length;i++){
-            if(arr[index]<arr[i]){
-                index=i;
-            }
-        }
-        return (char)('a'+index);
+    public static void main(String[] args) {
+        String s = "aabbbcccdeeEVeeeff";
+        int answer = maxlenLongestGoodString(s);
+        System.out.println(answer);
     }
-     public static void main(String[] args) {
-         String original = "aabbcccccddeeeeeeef";
-         System.out.println();
-    }
-   
     
 }
