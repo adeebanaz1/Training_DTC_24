@@ -9,8 +9,8 @@ public class reverseString {
         return s2;
     }
     public static void main(String[] args){
-        String original = "potato";
-        String rev = reverse(original);
+        String s1 = "potato";
+        String rev = reverse(s1);
         System.out.println(rev);
     }
     
