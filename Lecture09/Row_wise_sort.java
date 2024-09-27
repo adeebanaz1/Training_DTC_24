@@ -24,6 +24,4 @@ public class Row_wise_sort {
         row_sort(arr);
         display(arr);
     }
-    
-    
 }
