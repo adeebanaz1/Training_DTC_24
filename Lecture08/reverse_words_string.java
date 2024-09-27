@@ -13,7 +13,7 @@ public class reverse_words_string {
         System.out.print("!");
     }
     public static void main(String[] args) {
-        String original= "The bird is flyinggit add";
+        String original= "The bird is flying ";
         reverseWords(original);
     }
 }
