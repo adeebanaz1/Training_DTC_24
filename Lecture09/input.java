@@ -6,7 +6,7 @@ public class input {
         int[][] arr = new int[3][4];
         for(int i = 0; i<arr.length;i++){
             for(int j=0;j<arr[i].length;j++){
-            arr[i][j]= 4*i+(j+1); or // arr[i][j] = n;
+            arr[i][j]= 4*i+(j+1);  // or arr[i][j] = n;
             //n++;
         }
     }
