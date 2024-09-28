@@ -19,7 +19,8 @@ public class Row_wise_sort {
         int[][] arr = {
             {1,4,7,2},
             {5,9,4,6},
-            {9,15,63,0}
+            {9,15,63,0},
+            {2,5,8,1}
         };
         row_sort(arr);
         display(arr);
