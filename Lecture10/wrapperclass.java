@@ -1,7 +1,5 @@
 package Lecture10;
 
-import java.sql.Wrapper;
-
 public class wrapperclass {
     int[] arr;
     int object;
