@@ -25,8 +25,7 @@ public class Flattening {
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++)
                 arr[i][j]=nums[cols*i+j];
-        }
-        
+        }        
     }
     public static void main(String[] args) {
         int[][] arr = {
@@ -36,9 +35,7 @@ public class Flattening {
             {10,7,5}
         };
         flaten(arr);
-        display(arr);
-        
-    }
-    
+        display(arr);     
+    }  
 }
 
